@@ -1,0 +1,18 @@
+{
+  "name": "calculadora_javascript",
+  "version": "1.0.0",
+  "description": "Projeto de calculadora",
+  "main": "codigo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/JobsonOliveira/Calculadora_JavaScript.git)"
+  },
+  "keywords": [
+    "92701981"
+  ],
+  "author": "Jobson",
+  "license": "ISC"
+}
