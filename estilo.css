@@ -32,11 +32,11 @@ button{
 button:hover{
     background-color: #585959;
 }
-#Entradas .equal-btn{
+#Entradas .soma{
     grid-column: span 3;
     background-color: #75a5cb;
 }
-#Entradas .equal-btn:hover{
+#Entradas .soma:hover{
     background-color: #51728C;
 }
 #tela{
