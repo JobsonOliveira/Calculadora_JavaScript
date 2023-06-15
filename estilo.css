@@ -3,41 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*PÁGINA TODA*/
 body{
-    background-color: #78797A;
+    background: linear-gradient(to left, #0084ff60, #01fff26b);
     display: flex;
     justify-content: center;
     padding-top: 10vh; 
 }
+/*A CALCULADORA COMPLETA*/
 #calculadora{
-    background-color: #727373;
+    background-color: rgba(255, 255, 255, 0.4);
     min-height: 70vh;
     min-width: 50vh;
     padding: 5vh;
-    border-radius: 5px;
+    border-radius: 20px;
 }
+/*DIV COM OS BUTTONS*/
 #Entradas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1px;
+    gap: 3px;
     margin-top: 1vh;
 }
 button{
-    background-color: #bababa;
-    min-width: 15vh;
+    background-color: rgba(255, 255, 255, 0.4);
+    min-width: 14vh;
     height: 10vh;
     font-size: 4vh;
+    border: .5px solid;
     border-radius: 10px;
 }
 button:hover{
-    background-color: #585959;
+    background-color: #03ffc8;
+    font-size: 8vh;
+    border: 2px solid #000000;
 }
 #Entradas .soma{
     grid-column: span 3;
-    background-color: #75a5cb;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 #Entradas .soma:hover{
-    background-color: #51728C;
+    background-color: #03ffc8;
+    font-size: 8vh;
+    border: 2px solid #000000;
 }
 #tela{
     border: none;
