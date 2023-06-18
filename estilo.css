@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+@media (min-width: 501px){
 /*PÁGINA TODA*/
 body{
     background: linear-gradient(to left, #0084ff60, #01fff26b);
@@ -76,22 +77,22 @@ button:hover{
 h1{
     font-size: 4vh;
 }
-
+}
 /*--------------------------------------------------------------------------------*/
 
 @media (max-width: 500px){
     /*PÁGINA TODA*/
 body{
-    background: linear-gradient(to left, #00000060, #0000006b);
+    background: linear-gradient(to left, #0084ff60, #01fff26b);
     display: flex;
     justify-content: center;
-    padding-top: 10vh; 
+    margin-top: 20%;
 }
 /*A CALCULADORA COMPLETA*/
 #calculadora{
     background-color: rgba(255, 255, 255, 0.4);
-    max-height: 80vh;
-    max-width: 70vh;
+    max-width: 50vh;
+    height: 60vh;
     padding: 5vh;
     border-radius: 20px;
 }
@@ -99,7 +100,7 @@ body{
 #Entradas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 3px;
+    gap: 1px;
     margin-top: 1vh;
 }
 button{
@@ -107,10 +108,11 @@ button{
     font-size: 4vh;
     border: .5px solid;
     border-radius: 10px;
+    height: 7vh;
 }
 button:hover{
     background-color: #03ffc8;
-    font-size: 8vh;
+    font-size: 6vh;
     border: 2px solid #000000;
 }
 #Entradas .soma{
@@ -120,18 +122,18 @@ button:hover{
 }
 #Entradas .soma:hover{
     background-color: #03ffc8;
-    font-size: 8vh;
+    font-size: 6vh;
     border: 2px solid #000000;
 }
 #tela{
     border: none;
-    width: 60vh;
+    width: 40vh;
     min-height: 14vh;
     border: 1px solid #000;
     display: grid;
 }
 #caractere_anterio{
-    width: 60vh;
+    width: 40vh;
     text-align: right;
     min-height: 7vh;
     font-size: 3.5vh;
@@ -140,7 +142,7 @@ button:hover{
     padding: 1vh;
 }
 #caractere_atual{
-    width: 60vh;
+    width: 40vh;
     text-align: right;
     padding-right: 1vh;
     min-height: 7vh;
