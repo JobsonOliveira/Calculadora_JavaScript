@@ -50,22 +50,26 @@ function addCaractere(caractere){
 
 //ADICIONAR OS OPERADORES
 function addOperacao(operador){
-	//SE O NENHU NÚMERO FOI DIGITADO OU SE JÁ FOI DIGITADO O MESMO OPERADOR
-	if((arrayNumAtual.innerText == "") || (arrayNumAtual.innerText == '+') || (arrayNumAtual.innerText == '-') || (arrayNumAtual.innerText == '*') || (arrayNumAtual.innerText == '/')){
-		return;
+	//SE NENHUM NÚMERO FOI DIGITADO OU SE JÁ FOI DIGITADO O MESMO OPERADOR
+	if(((NumAtual.innerText == "") && (NumAnterior.innerText == '')) || (operacao != '') || ((operacao != '') && (NumAnterior.innerText == ''))){
+		if ((operador != NumAtual.innerText) && (NumAtual.innerText != '') && (arrayTodaOperacao.includes('+') == false) && (arrayTodaOperacao.includes('-') == false) && (arrayTodaOperacao.includes('*') == false) && (arrayTodaOperacao.includes('/') == false)) {
+			operacao = operador;
+			NumAtual.innerText = operacao;
+		}else{
+			return;
+		}
 	}
-	//MUDANDO O OPERADOR
-	else if(arrayNumAnterior != ""){
-		operacao = operador;
-		NumAtual.innerText = operacao;
-	}
-	//SE FOI DIGITADO UM NÚMERO A NÃO DIGITADO O OPERADOR
-	else{
+	//DIGITAR UM OPERADOR (FAZ O PRIMEIRO NÚMERO SUBIR)
+	else if(NumAtual.innerText != ''){
 		arrayNumAnterior = arrayNumAtual;
 		arrayNumAtual = "";
 		NumAnterior.innerText = arrayNumAnterior;
 		NumAtual.innerText = operador;
 		operacao = operador;
+	}
+	else if((NumAtual.innerText == '') && (NumAnterior.innerText != '') && (arrayTodaOperacao.includes('+') == false) && (arrayTodaOperacao.includes('-') == false) && (arrayTodaOperacao.includes('*') == false) && (arrayTodaOperacao.includes('/') == false)){
+		operacao = operador;
+		NumAtual.innerText = operacao;
 	}
 }
 

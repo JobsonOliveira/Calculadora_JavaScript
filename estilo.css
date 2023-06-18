@@ -76,3 +76,82 @@ button:hover{
 h1{
     font-size: 4vh;
 }
+
+/*--------------------------------------------------------------------------------*/
+
+@media (max-width: 500px){
+    /*PÁGINA TODA*/
+body{
+    background: linear-gradient(to left, #00000060, #0000006b);
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh; 
+}
+/*A CALCULADORA COMPLETA*/
+#calculadora{
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 80vh;
+    width: 70vh;
+    padding: 5vh;
+    border-radius: 20px;
+}
+/*DIV COM OS BUTTONS*/
+#Entradas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    margin-top: 1vh;
+}
+button{
+    background-color: rgba(255, 255, 255, 0.4);
+    min-width: 14vh;
+    height: 10vh;
+    font-size: 4vh;
+    border: .5px solid;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #03ffc8;
+    font-size: 8vh;
+    border: 2px solid #000000;
+}
+#Entradas .soma{
+    grid-column: span 3;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+#Entradas .soma:hover{
+    background-color: #03ffc8;
+    font-size: 8vh;
+    border: 2px solid #000000;
+}
+#tela{
+    border: none;
+    width: 60vh;
+    min-height: 14vh;
+    border: 1px solid #000;
+    display: grid;
+}
+#caractere_anterio{
+    width: 60vh;
+    text-align: right;
+    min-height: 7vh;
+    font-size: 3.5vh;
+    overflow-wrap: break-word;
+    color: #6b6b6b;
+    padding: 1vh;
+}
+#caractere_atual{
+    width: 60vh;
+    text-align: right;
+    padding-right: 1vh;
+    min-height: 7vh;
+    font-size: 5.5vh;
+    overflow-wrap: break-word;
+}
+.operacao{
+    font-weight: bold;
+}
+h1{
+    font-size: 4vh;
+}
+}
